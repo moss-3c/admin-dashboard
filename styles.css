@@ -1,0 +1,164 @@
+/* colors by nord! thanks nord: https://www.nordtheme.com/ */
+@import "./colors/nord.css";
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: 
+        url('/fonts/comfortaa.woff2')
+        format('woff2-variations');
+        font-weight: 300 700;
+        font-display: swap;
+}
+
+:root {
+    --x-small: 1rem;
+    --small: 1.25rem;
+    --medium: 1.5rem;
+    --large: 1.7rem;
+}
+
+
+body {
+    display: grid;
+    grid-template: 10rem 4fr / 17rem 4fr;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0px;
+    color: var(--nord4);
+}
+
+.dashboard {
+    grid-row: 1 / span 2;
+    background-color: var(--nord1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.4rem;
+    font-size: var(--medium);
+    z-index: 1;
+    
+}
+
+i{
+    margin-right: 1rem;
+}
+.fa-fish{
+    margin-right: 0.7rem;
+}
+.dash-header {
+    font-size: var(--large);
+}
+.group1, 
+.group2 {
+    display: grid;
+    font-size: var(--small);
+    font-weight: 400;
+}
+.group1 > div,
+.group2 > div {
+    padding: 0.5em 0.8em;
+    border-radius: 1rem
+}
+.group1 > div:hover,
+.group2 > div:hover {
+    background-color: var(--nord2);
+    cursor: pointer;
+}
+
+.top {
+    display: grid;
+    background-color: var(--nord2); 
+    padding: 1rem 2rem;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0 4px 4px var(--nord1);
+    z-index: 0;
+
+}
+
+
+.search-area, .user-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search-area{
+    max-height: 2.5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   
+}
+.container.left{
+    flex: 1;
+}
+.container.right{
+    flex: 0;
+}
+
+.container.right > img {
+    height: 2.5rem;
+    border-radius: 100%;
+}
+.pfp > img{
+    height: 3.5rem;
+    border-radius: 100%;
+}
+
+.small-username {
+    font-size: var(--small);
+
+   
+}
+
+
+.status{
+    font-size: var(--x-small);
+}
+.main {
+    background-color: var(--nord0);
+    grid-area: 2;
+}
+
+form {
+    display: flex;
+    flex-basis: 70%;
+    
+}
+#search{
+    all: unset;
+    background-color: var(--nord3);
+    border-radius: 2rem;
+    width: 100%;
+    font-size: var(--medium);
+    padding: 0.5rem 1rem;
+}
+
+.large-username {
+    font-size: var(--large);
+    font-weight: 700;
+}
+button{
+    all: unset;
+    background-color: var(--nord4);
+    color: var(--nord3);
+    font-size: var(--x-small);
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    font-family: 'Comfortaa', sans-serif;
+
+}
+button > i {
+    margin: auto;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--nord5);
+}
