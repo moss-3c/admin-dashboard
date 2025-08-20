@@ -1,14 +1,14 @@
 /* colors by nord! thanks nord: https://www.nordtheme.com/ */
 @import "./colors/nord.css";
 
-@font-face {
+/* @font-face {
     font-family: 'Comfortaa';
     src: 
         url('/fonts/comfortaa.woff2')
         format('woff2-variations');
         font-weight: 300 700;
         font-display: swap;
-}
+} */
 
 :root {
     --x-small: 1rem;
