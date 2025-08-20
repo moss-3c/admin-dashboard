@@ -254,6 +254,10 @@ button:hover{
     display: grid;
     background-color: var(--nord3);
 }
+
+.trend{
+    margin-top: 1.3rem;
+}
 .trendy-card {
     display: grid;
     gap: 1.8rem;
